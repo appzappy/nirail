@@ -1,0 +1,14 @@
+keys/Google Maps API key.txt
+keys/my-release-key.keystore
+keys/my-release-key.keystore 2
+keys/debug api key.txt
+keys/debug.keystore
+NIRailApp/bin/*
+NIRailApp/res/rail_data.zip
+TimetableDownloader/TimetableDownloader/TimetableDownloader/bin/*
+*.apk
+NIRailTests/bin/*
+.idea
+*.iml
+NIRailApp/out/*
+*.swp
