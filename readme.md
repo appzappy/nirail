@@ -23,7 +23,7 @@ The app doesn't come packaged with a timetable db, run the TimetableDownloader a
 
 Many people have said many kind things / sent nice emails over the last few years, it only feels right to thank you all:
 
-Andrew Bolster (@bolster), Colin Mitchell (@pixelpage), Richard McGuckin (@rpmscout), @AppleWalks, Simon Watterson (@NorthernFocus), James Hughes (@kouphax), @mcds01, Jonathan Cardy (@johnnycardy), Ash McConnell (@AshMcConnell), Andrew Gribbin (@grib), Philip Leighton (@dusted1969), James Donaldson (@jimbo\_donaldson), Andy Boal (@andyboal), Ed Simpson (@EdSimpsonNI), Stephen McDonacus (@mcduvet), Claire Smyth (@rudedoodle), Jonathan Gaston (@JTheGaston), @James\_Le\_Harve, @pimdoggydog, Simon Fraser (@symatree), Nichola McCrea (@oldknickers), @WeeManStudios
+Andrew Bolster (@bolster), Colin Mitchell (@pixelpage), Dan Porter (@stealthii), Richard McGuckin (@rpmscout), @AppleWalks, Simon Watterson (@NorthernFocus), James Hughes (@kouphax), @mcds01, Jonathan Cardy (@johnnycardy), Ash McConnell (@AshMcConnell), Andrew Gribbin (@grib), Philip Leighton (@dusted1969), James Donaldson (@jimbo\_donaldson), Andy Boal (@andyboal), Ed Simpson (@EdSimpsonNI), Stephen McDonacus (@mcduvet), Claire Smyth (@rudedoodle), Jonathan Gaston (@JTheGaston), @James\_Le\_Harve, @pimdoggydog, Simon Fraser (@symatree), Nichola McCrea (@oldknickers), @WeeManStudios
 
 Niall Graham, Thomas Jess, Stephen Patton, Morgan Young, Mark Smith, Eoghan, Cunningham, Peter Greenfield, Philip Blair, Neil Lawther, Ryan Farrelly, Christopher Nixon, Craig Coulter, Darren, Gareth Edwards, Georgina Ryan, James Glarryford, Nathan Montgomery, Olga Edwards, Reg Mercer, Steve Atkinson, Tony Barclay. 
 
