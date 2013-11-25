@@ -4,8 +4,10 @@ keys/my-release-key.keystore 2
 keys/debug api key.txt
 keys/debug.keystore
 NIRailApp/bin/*
-NIRailApp/res/rail_data.zip
+NIRailApp/res/raw/rail_data.zip
 TimetableDownloader/TimetableDownloader/TimetableDownloader/bin/*
+TimetableDownloader/TimetableDownloader/TimetableDownloader/metro/*
+TimetableDownloader/TimetableDownloader/TimetableDownloader/train/*
 *.apk
 NIRailTests/bin/*
 .idea
