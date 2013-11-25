@@ -29,7 +29,7 @@ Niall Graham, Thomas Jess, Stephen Patton, Morgan Young, Mark Smith, Eoghan, Cun
 
 ##Check out TripNI
 
-My evil iPhone competitor/sister app ;-P
-Awesome app, well worth a look for any iPhone. You took the weight off everytime someone asked if I would port NIRail to iPhone and I could point them straight to you.
+My evil iPhone competitor/sister app :-P
+Awesome app, well worth a look for anyone with an iPhone. You took the weight off everytime someone asked if I would port NIRail to iPhone and I could point them straight to you.
 
 [TripNI](http://tripni.co)
