@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:layout_marginBottom="2dip"
+	android:layout_marginTop="2dip"
+	android:paddingTop="5dip"
+	android:paddingBottom="5dip"
+	android:gravity="left">
+	<ImageView
+		android:id="@+id/stationWindow_listview_item_icon"
+		android:layout_width="50dip"
+		android:layout_height="50dip"
+		android:layout_alignParentLeft="true" />
+	<TextView
+		style="@style/NormalText"
+		android:id="@+id/stationWindow_listview_item_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/stationWindow_listview_item_icon"
+		android:layout_weight="1"
+		android:gravity="left|bottom"
+		/>
+	<TextView
+		style="@style/SmallTextAlt"
+		android:id="@+id/stationWindow_listview_item_distance"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/stationWindow_listview_item_text"
+		android:layout_alignLeft="@id/stationWindow_listview_item_text"
+		android:layout_height="wrap_content"
+		android:gravity="right|bottom"
+		/>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="title_height">50dip</dimen>
+    <dimen name="main_favourites_height">130dip</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_xlarge">25sp</dimen>
+    <dimen name="dash_shadow">10dip</dimen>
+    <dimen name="main_favourites_item_height">140dip</dimen>
+    <dimen name="main_favourites_item_width">85dip</dimen>
+    <dimen name="search_gallery_height">100dip</dimen>
+    <dimen name="item_height">120dip</dimen>
+    <dimen name="item_width">80dip</dimen>
+    <dimen name="upcoming_item_height">140dip</dimen>
+    <dimen name="upcoming_item_width">100dip</dimen>
+    <dimen name="upcoming_height">120dip</dimen>
+	<dimen name="stationMap_galleryHeight">140dip</dimen>
+</resources>

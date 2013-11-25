@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	android:id="@+id/home_root" 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout
+		style="@style/Dash_IconSection"
+	    android:id="@+id/dashboardLayout"
+		android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:gravity="right"
+    	>
+    	<!--Top Bar-->
+	    <LinearLayout style="@style/TitleBar">	
+	 		<TextView 
+	 			style="@style/TitleBarTitle" 
+	 			android:id="@+id/TitleButton"
+	 			android:text="@string/main_name"/>
+	        <View style="@style/TitleBarSpring" />
+	        <ImageView style="@style/TitleBarSeparator" />
+	        <ImageButton
+				style="@style/Dash_AppZappyLink"
+	            android:id="@+id/btn_title_appzappy"
+	            android:onClick="onAppZappyClick" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	    	android:id="@+id/dashboardPanel"
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="3dip"
+	        android:paddingBottom="3dip"
+	        android:gravity="center|top">
+	        <LinearLayout
+	            android:orientation="horizontal"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="5dip">
+	            <Button android:id="@+id/dash_map_btn"
+	                style="@style/Dash_ActivityButton_Map"
+	                android:onClick="onMapClick"
+	                android:text="@string/dash_station_map"
+	                />
+	            <Button android:id="@+id/dash_station_list_btn"
+	                style="@style/Dash_ActivityButton_StationList"
+	                android:onClick="onStationListClick"
+	                android:text="@string/dash_station_list"
+	                />
+	            <Button android:id="@+id/dash_search_btn"
+	                style="@style/Dash_ActivityButton_Search"
+	                android:onClick="onSearchClick"
+	                android:text="@string/dash_search"
+	                />
+	        </LinearLayout>
+		    <RelativeLayout android:id="@+id/favourites_missingPanel"
+				android:gravity="center"
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/main_favourites_height">
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					style="@style/SmallText"
+					android:text="@string/dash_nofavourites"
+					android:gravity="center"/>
+			</RelativeLayout>
+			<Gallery android:id="@+id/mainwindow_favouritesGallery"
+		        android:layout_width="fill_parent"
+		        android:layout_height="@dimen/main_favourites_height"
+		        android:spacing="5dip"
+		        android:gravity="fill_vertical"
+		        android:visibility="gone"
+		        android:unselectedAlpha="1.0"
+		        />
+	    </LinearLayout>
+		<RelativeLayout android:id="@+id/upcoming_missingPanel"
+			android:gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/upcoming_height">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				style="@style/SmallText"
+				android:text="@string/dash_noTrains"
+				android:gravity="center"/>
+		</RelativeLayout>
+		<LinearLayout
+			android:id="@+id/dash_upcoming_section"
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="0dip"
+			android:layout_weight="1"
+			>
+			<AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper
+				android:id="@+id/dash_upcoming_bar"
+				style="@style/SubTitleBar"
+				android:layout_height="35dip"
+				android:layout_width="fill_parent"
+				android:flipInterval="2000"
+				android:autoStart="true"
+				android:inAnimation="@anim/fade_in"
+				android:outAnimation="@anim/fade_out"
+				android:onClick="upcomingBarClick"
+				>
+				<TextView
+					android:id="@+id/upcomingText" 
+					style="@style/NormalText"
+					android:paddingLeft="7dip"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent" 
+					android:text="@string/dash_UpcomingArrivals"
+					android:gravity="center"
+					/>
+				<TextView
+					android:id="@+id/upcomingExpandText" 
+					style="@style/NormalText"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:text="@string/dash_UpcomingExpand"
+					android:gravity="center"
+					/>
+			</AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper>
+<!-- 			<TextView -->
+<!-- 				style="@style/NormalText" -->
+<!-- 				android:text="@string/dash_UpcomingArrivals" -->
+<!-- 				android:paddingLeft="7dip" -->
+<!-- 				android:layout_width="wrap_content" -->
+<!-- 				android:layout_height="wrap_content" /> -->
+<!-- 	        <View style="@style/TitleBarSpring" /> -->
+<!-- 	        <ImageView  -->
+<!-- 	        	android:id="@+id/dash_openbar_up_arrow" -->
+<!-- 	        	android:layout_width="wrap_content"  -->
+<!-- 	        	android:layout_height="wrap_content"  -->
+<!-- 	        	android:src="@drawable/ic_arrows_up" -->
+<!-- 	        	android:layout_marginRight="7dip" -->
+<!-- 	        	/> -->
+			<ListView
+				style="@style/RecessedPanel"
+				android:id="@+id/mainwindow_upcomingList"
+		        android:layout_width="fill_parent"
+		        android:layout_height="0dip"
+		        android:layout_weight="1"
+		        android:spacing="5dip"
+		        android:gravity="center" 
+		        android:cacheColorHint="#00000000"
+				/>
+		</LinearLayout>
+		<LinearLayout 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="@dimen/title_height"/>
+	</LinearLayout>
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		>
+		<SlidingDrawer 
+	     	android:layout_width="fill_parent" 
+	     	android:layout_height="fill_parent"
+	     	android:id="@+id/SlidingDrawer" 
+	     	android:handle="@+id/slideHandleButton" 
+	     	android:content="@+id/delay_inner">
+	     	<LinearLayout
+		    	android:id="@+id/slideHandleButton"
+	     		style="@style/Dashboard_DelayBar" >
+		    	<TextView 
+		    		style="@style/Dashboard_DelayBar_alert"
+		 			android:id="@+id/delaybar_notifications"
+			 		android:layout_width="@dimen/title_height"
+		     		android:layout_height="fill_parent"
+		 			android:text="" />
+			    <TextView
+			    	style="@style/Dashboard_DelayBar_text" 
+		 			android:id="@+id/slideHandleButton"
+			 		android:layout_width="0dip"
+			 		android:layout_weight="1"
+		     		android:layout_height="fill_parent"
+		 			android:text="@string/delay_text" />
+		 		<View 
+		 			android:layout_width="@dimen/title_height"
+		 			android:layout_height="fill_parent" />
+		    </LinearLayout> 
+	 		
+	 		<LinearLayout
+	 			android:id="@+id/delay_inner"
+	 			style="@style/Delays_Container"
+		 		android:orientation="vertical"
+	 			android:layout_width="fill_parent"
+	 			android:layout_height="fill_parent"
+		 		>
+		 		<LinearLayout
+		 			android:layout_height="wrap_content"
+		 			android:layout_width="fill_parent"
+		 			android:orientation="horizontal"
+		 			android:gravity="center|top"
+		 			>
+		 			<TextView
+			            android:id="@+id/delays_failedtext"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/delays_failed_to_download"
+			            android:visibility="gone"
+			            />
+		 		</LinearLayout>
+	 			
+		 		<RelativeLayout android:id="@+id/delay_loadingPanel"
+					android:gravity="center"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					>
+					<ProgressBar
+						style = "@style/GenericProgressIndicator"/>
+				</RelativeLayout>
+		 		<ListView 
+		 			style="@style/Delays_ListView"
+		 			android:id="@+id/contentLayoutList" 
+		 			android:layout_width="fill_parent" 
+		 			android:layout_height="0dip"
+		 			android:layout_weight="1"
+		 			android:gravity="center|top" 
+		 			android:dividerHeight="0px"
+		 			android:visibility="gone"
+		 			/>
+	 		</LinearLayout>
+		</SlidingDrawer>
+		
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			>
+			<ImageButton style="@style/RefreshButton"
+	            android:id="@+id/delay_refresh"
+	            android:onClick="onReloadDelays"
+	            android:layout_alignParentRight="true"
+	            android:visibility="gone"
+	            />
+		</RelativeLayout>
+ 		
+	</FrameLayout>
+	
+</FrameLayout>

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Network>
+  <Routes>
+    <Service ServiceName="Northern Ireland Railways Service 1" Direction="Outbound">
+      <Stop>Bangor, (NIR) Rail Station</Stop>
+      <Stop>Bangor West, (NIR) Rail Stn</Stop>
+      <Stop>Carnalea, (NIR) Rail Station</Stop>
+      <Stop>Helens Bay, (NIR) Rail Station</Stop>
+      <Stop>Seahill, (NIR) Rail Station</Stop>
+      <Stop>Cultra, (NIR) Rail Station</Stop>
+      <Stop>Marino, (NIR) Rail Station</Stop>
+      <Stop>Holywood, (NIR) Rail Station</Stop>
+      <Stop>Sydenham, (NIR) Stn City Airpt</Stop>
+      <Stop>Bridge End Odyssey, (NIR) Stn</Stop>
+      <Stop>Belfast, (NIR) Central Stn</Stop>
+      <Stop>Botanic, (NIR) Rail Station</Stop>
+      <Stop>City Hospital, (NIR) Rail Stn</Stop>
+      <Stop>Belfast, (NIR) Gt Victoria St (GVS)</Stop>
+      <Stop>Adelaide, (NIR) Station</Stop>
+      <Stop>Balmoral, (NIR) Rail Station</Stop>
+      <Stop>Finaghy, (NIR) Rail Station</Stop>
+      <Stop>Dunmurry, (NIR) Rail Station</Stop>
+      <Stop>Derriaghy, (NIR) Rail Station</Stop>
+      <Stop>Lambeg, (NIR) Rail Station</Stop>
+      <Stop>Hilden, (NIR) Rail Station</Stop>
+      <Stop>Lisburn, (NIR) Rail Station</Stop>
+      <Stop>Moira, (NIR) Rail Station</Stop>
+      <Stop>Lurgan, (NIR) Rail Station</Stop>
+      <Stop>Portadown, (NIR) Rail Station</Stop>
+      <Stop>Scarva, (NIR) Rail Station</Stop>
+      <Stop>Poyntzpass, (NIR) Rail Station</Stop>
+      <Stop>Newry, (NIR) Rail Station</Stop>
+    </Service>
+    <Service ServiceName="Northern Ireland Railways Service 2" Direction="Outbound">
+      <Stop>Belfast, (NIR) Gt Victoria St (GVS)</Stop>
+      <Stop>City Hospital, (NIR) Rail Stn</Stop>
+      <Stop>Botanic, (NIR) Rail Station</Stop>
+      <Stop>Belfast, (NIR) Central Stn</Stop>
+      <Stop>Yorkgate, (NIR) Rail Station</Stop>
+      <Stop>Whiteabbey, (NIR) Rail Stn</Stop>
+      <Stop>Jordanstown, (NIR) Rail Stn</Stop>
+      <Stop>Greenisland, (NIR) Rail Stn</Stop>
+      <Stop>Trooperslane, (NIR) Rail Stn</Stop>
+      <Stop>Clipperstown, (NIR) Rail Stn</Stop>
+      <Stop>Carrickfergus, (NIR) Rail Stn</Stop>
+      <Stop>Downshire, (NIR) Rail Station</Stop>
+      <Stop>Whitehead, (NIR) Rail Stn</Stop>
+      <Stop>Ballycarry, (NIR) Rail Stn</Stop>
+      <Stop>Magheramorne, (NIR) Rail Stn</Stop>
+      <Stop>Glynn, (NIR) Rail Station</Stop>
+      <Stop>Larne, (NIR) Town Rail Stn</Stop>
+      <Stop>Larne Harbour, (NIR) Rail Stn</Stop>
+    </Service>
+    <Service ServiceName="Northern Ireland Railways Service 3" Direction="Outbound">
+      <Stop>Belfast, (NIR) Gt Victoria St (GVS)</Stop>
+      <Stop>City Hospital, (NIR) Rail Stn</Stop>
+      <Stop>Botanic, (NIR) Rail Station</Stop>
+      <Stop>Belfast, (NIR) Central Stn</Stop>
+      <Stop>Yorkgate, (NIR) Rail Station</Stop>
+      <Stop>Mossley West, (NIR) Rail Stn</Stop>
+      <Stop>Antrim, (NIR) Rail Station</Stop>
+      <Stop>Ballymena, (NIR) Rail Station</Stop>
+      <Stop>Cullybackey, (NIR) Rail Stn</Stop>
+      <Stop>Ballymoney, (NIR) Rail Stn</Stop>
+      <Stop>Coleraine, (NIR) Rail Station</Stop>
+      <Stop>Coleraine Univ, (NIR) Rail Stn</Stop>
+      <Stop>Dhu Varren, (NIR) Rail Station</Stop>
+      <Stop>Portrush, (NIR) Rail Station</Stop>
+      <Stop>Dhu Varren, (NIR) Rail Station</Stop>
+      <Stop>Coleraine Univ, (NIR) Rail Stn</Stop>
+      <Stop>Coleraine, (NIR) Rail Station</Stop>
+      <Stop>Castlerock, (NIR) Rail Station</Stop>
+      <Stop>Bellarena, (NIR) Rail Station</Stop>
+      <Stop>Derry, (NIR) Watrsde Stn</Stop>
+    </Service>
+    <Service ServiceName="Northern Ireland Railways Service 4" Direction="Outbound">
+      <Stop>Coleraine, (NIR) Rail Station</Stop>
+      <Stop>Coleraine Univ, (NIR) Rail Stn</Stop>
+      <Stop>Dhu Varren, (NIR) Rail Station</Stop>
+      <Stop>Portrush, (NIR) Rail Station</Stop>
+    </Service>
+  </Routes>
+  <Location RealName="Portadown" Latitude="54.423967" Longtitude="-6.44685" LocationType="Train">
+    <Alias>Portadown, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Scarva" Latitude="54.330956" Longtitude="-6.366439" LocationType="Train">
+    <Alias>Scarva, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Poyntzpass" Latitude="54.292544" Longtitude="-6.372186" LocationType="Train">
+    <Alias>Poyntzpass, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Newry" Latitude="54.1885" Longtitude="-6.3625" LocationType="Train">
+    <Alias>Newry, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Central Station" Latitude="54.5953" Longtitude="-5.9172" LocationType="Train">
+    <Alias>Belfast, (NIR) Central Stn</Alias>
+  </Location>
+  <Location RealName="Botanic" Latitude="54.58835" Longtitude="-5.933229" LocationType="Train">
+    <Alias>Botanic, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="City Hospital" Latitude="54.587931" Longtitude="-5.93666" LocationType="Train">
+    <Alias>City Hospital, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Great Victoria Street" Latitude="54.59418" Longtitude="-5.9362" LocationType="Train">
+    <Alias>Belfast, (NIR) Gt Victoria St (GVS)</Alias>
+    <Alias>Great Victoria Street Station</Alias>
+    <Alias>Great Victoria Station</Alias>
+    <Alias>GVS</Alias>
+  </Location>
+  <Location RealName="Adelaide" Latitude="54.578548" Longtitude="-5.95573" LocationType="Train">
+    <Alias>Adelaide, (NIR) Station</Alias>
+  </Location>
+  <Location RealName="Balmoral" Latitude="54.569097" Longtitude="-5.968154" LocationType="Train">
+    <Alias>Balmoral, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Finaghy" Latitude="54.56359" Longtitude="-5.987433" LocationType="Train">
+    <Alias>Finaghy, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Dunmurry" Latitude="54.552603" Longtitude="-6.00412" LocationType="Train">
+    <Alias>Dunmurry, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Derriaghy" Latitude="54.542371" Longtitude="-6.025529" LocationType="Train">
+    <Alias>Derriaghy, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Lambeg" Latitude="54.529464" Longtitude="-6.029458" LocationType="Train">
+    <Alias>Lambeg, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Hilden" Latitude="54.5222965" Longtitude="-6.029645" LocationType="Train">
+    <Alias>Hilden, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Lisburn" Latitude="54.514116" Longtitude="-6.045348" LocationType="Train">
+    <Alias>Lisburn, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Moira" Latitude="54.492105" Longtitude="-6.214558" LocationType="Train">
+    <Alias>Moira, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Lurgan" Latitude="54.467210" Longtitude="-6.337931" LocationType="Train">
+    <Alias>Lurgan, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Bangor" Latitude="54.6588299" Longtitude="-5.670877" LocationType="Train">
+    <Alias>Bangor, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Bangor West" Latitude="54.660032" Longtitude="-5.693227" LocationType="Train">
+    <Alias>Bangor West, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Carnalea" Latitude="54.6660399" Longtitude="-5.705697" LocationType="Train">
+    <Alias>Carnalea, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Helens Bay" Latitude="54.6665541" Longtitude="-5.740999" LocationType="Train">
+    <Alias>Helens Bay, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Seahill" Latitude="54.6604566" Longtitude="-5.7691567" LocationType="Train">
+    <Alias>Seahill, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Cultra" Latitude="54.6521350" Longtitude="-5.8057239" LocationType="Train">
+    <Alias>Cultra, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Marino" Latitude="54.6467752" Longtitude="-5.818117" LocationType="Train">
+    <Alias>Marino, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Holywood" Latitude="54.6416161" Longtitude="-5.838625" LocationType="Train">
+    <Alias>Holywood, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Sydenham" Latitude="54.6091066" Longtitude="-5.8778022" LocationType="Train">
+    <Alias>Sydenham, (NIR) Stn City Airpt</Alias>
+  </Location>
+  <Location RealName="Bridge End, Odyssey" Latitude="54.6017937" Longtitude="-5.906223" LocationType="Train">
+    <Alias>Bridge End Odyssey, (NIR) Stn</Alias>
+    <Alias>Odyssey</Alias>
+  </Location>
+  <Location RealName="Larne" Latitude="54.850077" Longtitude="-5.814342" LocationType="Train">
+    <Alias>Larne, (NIR) Town Rail Stn</Alias>
+  </Location>
+  <Location RealName="Ballycarry" Latitude="54.777543" Longtitude="-5.725932" LocationType="Train">
+    <Alias>Ballycarry, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Whitehead" Latitude="54.753127" Longtitude="-5.709618" LocationType="Train">
+    <Alias>Whitehead, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Downshire" Latitude="54.720904" Longtitude="-5.791262" LocationType="Train">
+    <Alias>Downshire, (NIR) Rail Station</Alias>
+    <Alias>Downshire Halt</Alias>
+  </Location>
+  <Location RealName="Carrickfergus" Latitude="54.717496" Longtitude="-5.809657" LocationType="Train">
+    <Alias>Carrickfergus, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Clipperstown" Latitude="54.7175430" Longtitude="-5.818904" LocationType="Train">
+    <Alias>Clipperstown, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Greenisland" Latitude="54.700218" Longtitude="-5.87299" LocationType="Train">
+    <Alias>Greenisland, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Jordanstown" Latitude="54.6873482" Longtitude="-5.895068" LocationType="Train">
+    <Alias>Jordanstown, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Whiteabbey" Latitude="54.6722405" Longtitude="-5.904502" LocationType="Train">
+    <Alias>Whiteabbey, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Yorkgate" Latitude="54.6104647" Longtitude="-5.922327" LocationType="Train">
+    <Alias>Yorkgate, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Larne Harbour" Latitude="54.847935" Longtitude="-5.798756" LocationType="Train">
+    <Alias>Larne Harbour, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Glynn" Latitude="54.826997" Longtitude="-5.80696" LocationType="Train">
+    <Alias>Glynn, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Magheramorne" Latitude="54.814956" Longtitude="-5.770537" LocationType="Train">
+    <Alias>Magheramorne, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Trooperslane" Latitude="54.7099734" Longtitude="-5.849608" LocationType="Train">
+    <Alias>Trooperslane, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Mossley West" Latitude="54.6967915" Longtitude="-5.951229" LocationType="Train">
+    <Alias>Mossley West, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Antrim" Latitude="54.718453" Longtitude="-6.211690" LocationType="Train">
+    <Alias>Antrim, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Ballymena" Latitude="54.863568" Longtitude="-6.284378" LocationType="Train">
+    <Alias>Ballymena, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Cullybackey" Latitude="54.888247" Longtitude="-6.344572" LocationType="Train">
+    <Alias>Cullybackey, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Ballymoney" Latitude="55.066659" Longtitude="-6.514233" LocationType="Train">
+    <Alias>Ballymoney, (NIR) Rail Stn</Alias>
+  </Location>
+  <Location RealName="Coleraine" Latitude="55.134126" Longtitude="-6.663018" LocationType="Train">
+    <Alias>Coleraine, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Castlerock" Latitude="55.165041" Longtitude="-6.787083" LocationType="Train">
+    <Alias>Castlerock, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Bellarena" Latitude="55.126484" Longtitude="-6.952519" LocationType="Train">
+    <Alias>Bellarena, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Derry" Latitude="54.992034" Longtitude="-7.313775" LocationType="Train">
+    <Alias>Derry, (NIR) Watrsde Stn</Alias>
+    <Alias>Londonderry</Alias>
+  </Location>
+  <Location RealName="Coleraine University" Latitude="55.150939" Longtitude="-6.669023" LocationType="Train">
+    <Alias>Coleraine Univ, (NIR) Rail Stn</Alias>
+    <Alias>Coleraine Univ</Alias>
+    <Alias>Coleraine University Halt</Alias>
+  </Location>
+  <Location RealName="Dhu Varren" Latitude="55.196428" Longtitude="-6.660775" LocationType="Train">
+    <Alias>Dhu Varren, (NIR) Rail Station</Alias>
+  </Location>
+  <Location RealName="Portrush" Latitude="55.203422" Longtitude="-6.653187" LocationType="Train">
+    <Alias>Portrush, (NIR) Rail Station</Alias>
+  </Location>
+</Network>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_height="wrap_content" 
+ 	android:gravity="center"
+ 	android:layout_width="fill_parent" 
+ 	android:orientation="horizontal"
+ 	>
+ 	<TextView
+ 		style="@style/ListNormalText"
+		android:id="@+id/departTime"
+		android:layout_width="0dip"
+ 		android:layout_height="wrap_content"
+ 		android:layout_weight="1"
+ 		android:gravity="center"
+		android:paddingTop="2dip"
+ 		android:paddingBottom="2dip"
+ 		/>
+ 	<ImageView
+ 		style="@style/TitleBarSeparator" />
+ 	<TextView
+ 		style="@style/ListNormalText"
+		android:id="@+id/arriveTime"
+ 		android:layout_width="0dip" 
+ 		android:layout_height="wrap_content"
+ 		android:layout_weight="1"
+ 		android:gravity="center"
+		android:paddingTop="2dip"
+ 		android:paddingBottom="2dip"
+ 		/>
+ 	<ImageView
+ 		style="@style/TitleBarSeparator" />
+ 	<TextView
+ 		style="@style/ListNormalText"
+		android:id="@+id/numberChanges"
+ 		android:layout_width="0dip" 
+ 		android:layout_height="wrap_content"
+ 		android:layout_weight="1"
+ 		android:gravity="center"
+		android:paddingTop="2dip"
+ 		android:paddingBottom="2dip"
+ 		/>
+ 	<ImageView
+ 		style="@style/TitleBarSeparator" />
+ 	<TextView
+		style="@style/ListNormalText"
+		android:id="@+id/lengthTime"
+ 		android:layout_width="0dip" 
+ 		android:layout_height="wrap_content"
+ 		android:layout_weight="1"
+ 		android:gravity="center"
+		android:paddingTop="2dip"
+ 		android:paddingBottom="2dip"
+ 		/>
+</LinearLayout>

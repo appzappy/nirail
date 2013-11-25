@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="distance_units">
+		<item>km</item>
+		<item>miles</item>
+    </string-array>
+   	<string-array name="theme_names">
+		<item>Dark</item>
+		<item>Light</item>
+		<item>Blue</item>
+		<item>Black</item>
+		<item>Orange</item>
+		<item>Green</item>
+		<item>OtherGreen</item>
+		<item>Pink</item>
+		<item>OtherPink</item>
+		<item>Purple</item>
+		<item>Yellow</item>
+		<item>OtherYellow</item>
+    </string-array>
+</resources>

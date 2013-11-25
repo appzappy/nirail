@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	android:id="@+id/journey_main_layout"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="right">
+	<LinearLayout
+		style="@style/TitleBar">
+		<ImageButton
+			style="@style/TitleBarHome"
+			android:id="@+id/btn_title_home"
+			android:onClick="onHomeClick" />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<TextView
+			style="@style/TitleBarTitle"
+			android:id="@+id/TitleButton"
+			android:text="@string/title_journey" />
+	</LinearLayout>
+
+	<LinearLayout
+		style="@style/Header_Layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:weightSum="1.0"
+		android:padding="3dp">
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_weight="0.5"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:weightSum="1.0">
+				<TextView
+					style="@style/NormalText"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/journey_TotalLength"/>
+				<TextView
+					style="@style/SmallTextAlt"
+					android:id="@+id/journey_TotalTimeText"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:gravity="center"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:weightSum="1.0">
+				<TextView
+					style="@style/NormalText"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/journey_Changes"/>
+				<TextView
+					style="@style/SmallTextAlt"
+					android:id="@+id/journey_changesText"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:gravity="center"/>
+			</LinearLayout>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_weight="0.5"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:weightSum="1.0">
+				<TextView
+					style="@style/NormalText"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/journey_Departure"/>
+				<TextView
+					style="@style/SmallTextAlt"
+					android:id="@+id/journey_departureTimeText"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:gravity="center"/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:weightSum="1.0">
+				<TextView
+					style="@style/NormalText"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/journey_Arrival"/>
+				<TextView
+					style="@style/SmallTextAlt"
+					android:id="@+id/journey_arrivalTimeText"
+					android:layout_width="0dp"
+					android:layout_weight="0.5"
+					android:layout_height="wrap_content"
+					android:gravity="center"/>
+			</LinearLayout>
+			
+		</LinearLayout>
+	</LinearLayout>
+	
+
+	<LinearLayout
+		style="@style/TitleBar"
+		android:layout_height="30dip"
+		android:layout_width="match_parent">
+		<TextView
+			style="@style/NormalBarText"
+			android:id="@+id/map_view_title"
+			android:text="@string/journey_linking"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="5dip"
+			/>
+	</LinearLayout>
+
+	<ListView
+		style="@style/Journey_TimetableList"
+		android:cacheColorHint="?listBackgroundColour"
+		android:id="@+id/journeyUI_portion_listView"
+		android:clickable="true"
+		/>
+</LinearLayout>

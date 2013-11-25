@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	android:onClick="listViewHasBeenClicked"
+	android:orientation="horizontal"
+	android:layout_marginBottom="2dip"
+	android:layout_marginTop="2dip"
+	android:padding="5dip"
+	android:gravity="left"
+	>
+  	<ImageView
+  		android:id="@+id/stationFinder_listview_item_icon"
+		android:layout_width="50dip"
+		android:layout_height="50dip"
+		android:layout_alignParentLeft="true"
+		/>
+ 	<TextView
+ 		style="@style/NormalText"
+ 		android:id="@+id/stationFinder_listview_item_location"
+ 		android:layout_width="wrap_content" 
+ 		android:layout_height="wrap_content"
+ 		android:layout_toRightOf="@id/stationFinder_listview_item_icon"
+ 		android:layout_weight="1"
+ 		android:gravity="center|bottom"
+ 		/>
+ 	<TextView
+ 		style="@style/SmallTextAlt" 
+ 		android:id="@+id/stationFinder_listview_item_distance"
+ 		android:layout_width="wrap_content" 
+ 		android:layout_below="@id/stationFinder_listview_item_location"
+ 		android:layout_alignLeft="@id/stationFinder_listview_item_location"
+ 		android:layout_height="wrap_content"
+ 		android:gravity="right|bottom"
+		/>
+	<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+		style="@style/StationList_FavouriteButton"
+		android:id="@+id/stationFinder_listview_Toggle_btn"
+		android:onClick="setAsFavourite"
+		android:layout_alignParentRight="true"
+		/> 
+</RelativeLayout>

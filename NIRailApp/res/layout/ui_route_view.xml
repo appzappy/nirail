@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	style="@style/generalBackground"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		style="@style/TitleBar"
+		>
+		<ImageButton
+			style="@style/TitleBarHome"
+			android:id="@+id/btn_title_home"
+			android:onClick="onHomeClick"
+			 />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<TextView
+			style="@style/TitleBarTitle"
+			android:id="@+id/TitleButton"
+			android:text="@string/title_route" />
+	</LinearLayout>
+	<LinearLayout
+		style="@style/Header_Layout"
+		android:id="@+id/route_view_starting_date"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:visibility="gone"
+		android:paddingLeft="5dip"
+		>
+		<TextView
+			style="@style/SmallText"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/route_start"
+			android:padding="3dip" />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<TextView
+			style="@style/SmallText"
+			android:id="@+id/route_view_start_date_text"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="3dip" />
+	</LinearLayout>
+	<LinearLayout
+		style="@style/Header_Layout"
+		android:id="@+id/route_view_ending_date"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:visibility="gone"
+		android:paddingLeft="5dip"
+		>
+		<TextView
+			style="@style/SmallText"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/route_end"
+			android:padding="3dip" />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<TextView
+			style="@style/SmallText"
+			android:id="@+id/route_view_end_date_text"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="3dip" />
+	</LinearLayout>
+	<LinearLayout
+		style="@style/Header_Layout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+		<TextView
+			style="@style/SmallText"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:gravity="center"
+			android:text="@string/route_Stop"
+			android:padding="3dip" />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<TextView
+			style="@style/SmallText"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/route_Time"
+			android:padding="3dip" />
+	</LinearLayout>
+	<ListView
+		style="@style/general_list"
+		android:id="@+id/routeUI_listView"/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		style="@style/TitleBar"
+		android:orientation="horizontal"
+	    android:weightSum="1.0">		    
+	    <Button android:id="@+id/route_copy_button"
+	    	android:layout_width="0dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="0.5"
+	    	android:layout_marginLeft="5dip"
+	    	android:layout_marginRight="5dip"
+	    	android:layout_marginTop="3dip"
+	    	android:onClick="onCopyClick"
+	    	android:text="@string/title_copyTrain"
+	    	/>
+	    	
+	    <Button android:id="@+id/route_remind_button"
+	    	android:layout_weight="0.5"
+	    	android:layout_width="0dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginRight="5dip"
+	    	android:layout_marginTop="3dip"
+	    	android:onClick="onRemindClick"
+	    	android:text="@string/title_remindMe" />
+	    	
+	</LinearLayout>
+	<AppZappy.NIRailAndBus.ui.ads.CustomAdView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	android:id="@+id/journey_main_layout"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="right">
+	<LinearLayout
+		style="@style/TitleBar">
+		<ImageButton
+			style="@style/TitleBarHome"
+			android:id="@+id/btn_title_home"
+			android:onClick="onHomeClick" />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<TextView
+			style="@style/TitleBarTitle"
+			android:id="@+id/TitleButton"
+			android:text="@string/title_journey_set" />
+		<View
+			style="@style/TitleBarSpring" />
+		<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+			style="@style/StationView_Favourite"
+			android:id="@+id/journey_favourite_toggle_btn"
+			android:onClick="setAsFavourite"
+			android:gravity="fill"
+			android:layout_width="40dip"
+			android:layout_height="40dip"
+			android:scaleType="fitCenter" />
+	</LinearLayout>
+
+	<LinearLayout
+		style="@style/Header_Layout"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:weightSum="2"
+		android:gravity="center">
+		<Button
+			style="@style/NormalText_Header"
+			android:id="@+id/journeyUI_departText"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:padding="10dip"
+			android:gravity="center"
+			android:onClick="onDepartClick"
+			android:ellipsize="end"
+			 />
+		<ImageButton
+			style="@style/Journey_SwapLocations"
+			android:id="@+id/journey_swap_locations"
+			android:paddingTop="3dip"
+			android:paddingBottom="3dip"
+			android:onClick="onSwapClick" />
+		<Button
+			style="@style/NormalText_Header"
+			android:id="@+id/journeyUI_destText"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:padding="10dip"
+			android:onClick="onDestClick"
+			android:ellipsize="end"
+			 />
+	</LinearLayout>
+	
+	<com.viewpagerindicator.TitlePageIndicator
+	    android:id="@+id/pager_indicator"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    style="@style/viewpager_indicator"
+	     />
+
+	<android.support.v4.view.ViewPager
+	    android:layout_width="match_parent" 
+		android:layout_height="0dip"
+		android:layout_weight="1" 
+	    android:id="@+id/pager"/>
+	    
+	<AppZappy.NIRailAndBus.ui.ads.CustomAdView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center" />
+</LinearLayout>

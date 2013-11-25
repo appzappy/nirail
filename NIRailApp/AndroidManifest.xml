@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="AppZappy.NIRailAndBus"
+    android:installLocation="preferExternal"
+    android:versionName="2.1.4"
+	android:versionCode="24">
+    
+    <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" /> 
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="18" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-feature android:name="android.hardware.location.gps" android:required="false" />
+	<uses-feature android:name="android.hardware.location" android:required="false" />
+	
+    <application android:icon="@drawable/icon" android:label="@string/main_name"
+                 android:allowBackup="false" android:theme="@style/DarkTheme" android:debuggable="true">
+        <activity android:name=".ui.activities.FirstActivity" android:label="@string/main_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.Dashboard" android:label="@string/main_name" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activities.MessageActivity" android:label="@string/main_name" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activities.SearchWindow" android:label="@string/title_search" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activities.JourneySet" android:label="@string/title_journey_set" android:screenOrientation="portrait"/>
+		<activity android:name=".ui.activities.JourneyWindow" android:label="@string/title_journey" android:screenOrientation="portrait"/>
+		<activity android:name=".ui.activities.StationMap" android:label="@string/title_mapview" android:screenOrientation="portrait"/>
+	    <activity android:name=".ui.activities.StationList" android:label="@string/title_stationList" android:screenOrientation="portrait"/>
+	    <activity android:name=".ui.activities.RouteWindow" android:label="@string/title_route" android:screenOrientation="portrait"/>
+	    <activity android:name=".ui.activities.StationWindow" android:label="@string/title_station" android:screenOrientation="portrait"/>
+	    <activity android:name=".ui.activities.Favourites" android:label="@string/title_favourites" android:screenOrientation="portrait"/>
+	    <activity android:name=".ui.activities.AboutUs" android:label="@string/title_aboutus" android:screenOrientation="portrait"/>
+	    <activity android:name=".ui.activities.PreferencesWindow" android:label="@string/title_preferences" android:screenOrientation="portrait"/>
+	    <receiver android:name=".notifications.ReminderReceiver" android:process=":remote" />
+	    <receiver android:name=".notifications.CountdownReceiver" android:process=":remote" />
+	    <receiver android:name=".notifications.DistantReceiver" android:process=":remote" />
+	    <activity android:name=".notifications.AlarmDialog" 
+	    	android:theme="@android:style/Theme.Dialog"  
+	    	android:excludeFromRecents="true" 
+	    	android:taskAffinity=""
+	    	android:launchMode="singleTop"/>
+	    <uses-library android:name="com.google.android.maps" />
+	    
+	    <!-- AdMobActivity definition -->
+		<activity android:name="com.google.ads.AdActivity"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".ui.FragmentedDashboard" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest> 

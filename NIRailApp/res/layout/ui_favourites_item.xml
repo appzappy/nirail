@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:onClick="favouriteClick"
+	android:padding="3dip"
+	>
+	<ImageView android:id="@+id/favouritesUI_icon"
+		android:layout_width="50dip"
+		android:layout_height="50dip"
+		android:layout_alignParentLeft="true"
+ 		android:gravity="left|center"
+ 		android:src="@drawable/btn_station_marker_default"
+		/>
+	<Button
+		style="@style/Search_DeleteButton"
+		android:id="@+id/favouritesUI_deleteButton"
+		android:layout_alignParentRight="true"
+		android:onClick="removeFavourite"
+		/>
+	<TextView
+		style="@style/NormalText"
+		android:id="@+id/favouritesUI_textMessage"
+		android:layout_width="0dip"
+ 		android:layout_weight="1" 
+ 		android:layout_height="wrap_content"
+ 		android:gravity="left"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@id/favouritesUI_icon"
+		android:layout_toLeftOf="@id/favouritesUI_deleteButton"
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip"
+		/>
+</RelativeLayout>

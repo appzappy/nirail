@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/context_menu_favourites"
+		android:icon="@drawable/ic_menu_favourite"
+		android:title="@string/title_favourites"
+		/>
+	<item android:id="@+id/context_menu_preferences"
+		android:icon="@drawable/ic_menu_options"
+		android:title="@string/title_preferences"
+		/>
+	<item android:id="@+id/context_menu_issues"
+		android:icon="@drawable/ic_menu_warning"
+		android:title="@string/title_issues"
+		/>
+	<item android:id="@+id/context_menu_aboutus"
+		android:icon="@drawable/ic_menu_about"
+		android:title="@string/title_aboutus"
+		/>
+</menu>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	style="@style/generalBackground"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		style="@style/TitleBar">
+		<ImageButton
+			style="@style/TitleBarHome"
+			android:id="@+id/btn_title_home"
+			android:onClick="onHomeClick" />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<TextView
+			style="@style/TitleBarTitle"
+			android:id="@+id/TitleButton"
+			android:text="@string/title_stationList" />
+		<View
+			style="@style/TitleBarSpring" />
+
+		<ImageView
+			style="@style/TitleBarSeparator" />
+
+		<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+			style="@style/StationList_TopNavButton_map"
+			android:id="@+id/stationFinderUI_mapToggle_btn"
+			android:onClick="onOpenMapViewClick"
+			 />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+			style="@style/StationList_TopNavButton_list"
+			android:id="@+id/stationFinderUI_listToggle_btn"
+			app:initialState="true" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/stationListView_topbar"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_marginTop="5dip">
+		<Button
+			style="@style/StationList_SortButton"
+			android:id="@+id/stationFinderUI_sortButton"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/sort_menu_distance"
+			android:padding="3dip"
+			android:clickable="true"
+			android:onClick="onSortClick"
+			 />
+		<EditText
+			android:id="@+id/stationFinderUI_searchTextView"
+			android:layout_width="0dip"
+			android:layout_weight="2"
+			android:layout_height="wrap_content"
+			android:hint="station name:"
+			android:singleLine="true"
+			android:autoText="false"
+			android:editable="true"
+			android:inputType="textNoSuggestions|textVisiblePassword"
+			android:visibility="gone" />
+		<Button
+			style="@style/StationList_SearchCancelButton"
+			android:id="@+id/stationFinderUI_searchCancelButton"
+			android:layout_width="35dip"
+			android:layout_height="35dip"
+			android:gravity="center"
+			android:padding="3dip"
+			android:clickable="true"
+			android:onClick="onHideSearchClick"
+			android:layout_marginRight="10dip"
+			android:layout_marginLeft="10dip"
+			android:visibility="gone" />
+		<Button
+			style="@style/StationList_SearchButton"
+			android:id="@+id/stationFinderUI_searchButton"
+			android:onClick="onSearchClick"
+			android:gravity="center"
+			android:layout_height="35dip"
+			android:layout_width="35dip"
+			android:layout_marginRight="10dip"
+			/>
+	</LinearLayout>
+
+	<ListView
+		style="@style/general_list"
+		android:id="@+id/stationFinderUI_listview"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:gravity="left"
+		/>
+	<AppZappy.NIRailAndBus.ui.ads.CustomAdView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center" />
+</LinearLayout>

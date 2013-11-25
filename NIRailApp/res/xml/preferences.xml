@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="@string/preferences_general">
+		<ListPreference
+			android:title="@string/preferences_distance_title"
+			android:key="@string/preferences_distance"
+			android:defaultValue="@string/preferences_distance_default"
+			android:entries="@array/distance_units"
+			android:entryValues="@array/distance_units" />
+			
+		<ListPreference
+			android:title="@string/preferences_theme_title"
+			android:key="@string/preferences_theme"
+			android:defaultValue="Dark"
+			android:entries="@array/theme_names"
+			android:entryValues="@array/theme_names" />
+			
+		<CheckBoxPreference
+			android:title="@string/preferences_time24_title"
+			android:key="@string/preferences_time24"
+			android:defaultValue="@string/preferences_time24_default" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/preferences_dashboard">
+		<CheckBoxPreference
+			android:title="@string/preferences_display_favourites_title"
+			android:key="@string/preferences_display_favourites"
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:title="@string/preferences_display_upcoming_title"
+			android:key="@string/preferences_display_upcoming"
+			android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:title="@string/preferences_pathfinding">
+		<CheckBoxPreference
+			android:title="@string/preferences_enable_expiry_dates_title"
+			android:key="@string/preferences_enable_expiry_dates"
+			android:summary="@string/preferences_enable_expiry_dates_summary"
+			android:defaultValue="true" />
+	</PreferenceCategory>
+</PreferenceScreen>

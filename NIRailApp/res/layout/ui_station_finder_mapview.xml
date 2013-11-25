@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="top|right"
+	android:orientation="vertical">
+	<LinearLayout
+		style="@style/TitleBar">
+		<ImageButton
+			style="@style/TitleBarHome"
+			android:id="@+id/btn_title_home"
+			android:onClick="onHomeClick" />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<TextView
+			style="@style/TitleBarTitle"
+			android:id="@+id/TitleButton"
+			android:text="@string/title_mapview" />
+		<View
+			style="@style/TitleBarSpring" />
+
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+			style="@style/StationList_TopNavButton_map"
+			android:id="@+id/stationFinderUI_mapToggle_btn"
+			app:initialState="true" />
+		<ImageView
+			style="@style/TitleBarSeparator" />
+		<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+			style="@style/StationList_TopNavButton_list"
+			android:id="@+id/stationFinderUI_listToggle_btn"
+			android:onClick="onOpenListViewClick"
+			/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/stationFinderUI_MapHolder"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:gravity="fill_vertical"
+		android:clickable="true"
+		>
+	</LinearLayout>
+	
+	<LinearLayout
+		style="@style/TitleBar"
+		android:layout_height="30dip"
+		android:layout_width="fill_parent">
+		<TextView
+			style="@style/NormalBarText"
+			android:id="@+id/map_view_title"
+			android:text="@string/map_description"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="5dip"
+			/>
+	</LinearLayout>
+
+	<!-- LAYOUT_HEIGHT IS NEEDED! THIS IS IMPORTANT! -->
+	<!-- HEIGHT IS PROGRAMICALLY SET IN SearchWindow.java -->
+	<Gallery
+		style="@style/RecessedPanel"
+		android:id="@+id/stationFinderUI_station_gallery_view"
+		android:layout_width="560dip"
+		android:layout_height="@dimen/stationMap_galleryHeight"
+		android:spacing="5dip"
+		android:gravity="left"
+		android:clickable="true"
+		android:unselectedAlpha="1.0"
+		/>
+
+</LinearLayout>

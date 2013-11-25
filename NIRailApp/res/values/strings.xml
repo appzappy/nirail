@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="main_name">NI Rail</string>
+	<string name="title_mapview">Map</string>
+	<string name="title_journey">Journey</string>
+	<string name="title_search">Find Train</string>
+	<string name="title_route">Route Display</string>
+	<string name="title_station">Location</string>
+	<string name="title_stationList">Location List</string>
+	<string name="title_journey_set">Journeys</string>
+	<string name="title_favourites">Favourites</string>
+	<string name="title_aboutus">About US</string>
+	<string name="title_preferences">Preferences</string>
+	<string name="title_issues">Issues</string>
+	<string name="title_copyTrain">Copy Time</string>
+	<string name="title_remindMe">Remind Me</string>
+	
+	<string name="title_issues_text">Please use the Journey Planner on holidays as timetables often vary.\nHolidays include: \n-Christmas Day\n-Boxing Day\n-New Year\'s Day\n-St Patrick\'s Day\n-Easter\n-May Day\n-July Holidays</string>
+	
+	<string name="description_refresh">Refresh</string>
+	
+	<string name="dash_station_map">Map</string>
+	<string name="dash_station_list">Locations</string>
+	<string name="dash_search">Find</string>
+	<string name="dash_nofavourites">No favourites saved. Star locations and routes for easy access to your favourites</string>
+	<string name="dash_noTrains">There are no trains nearby.\nWe\'d suggest a Taxi.</string>
+	<string name="dash_UpcomingArrivals">Nearby Upcoming Departures</string>
+	<string name="dash_UpcomingExpand">Tap to Expand</string>
+	<string name="dash_UpcomingContract">Tap to Return</string>
+	
+	<string name="delay_text">Delay Notifications</string>
+    <string name="no_delays">No Delay Notifications loaded</string>
+    <string name="delays_failed_to_download">Failed retrieving delays</string>
+    
+    <string name="upcoming_to">to</string>
+	
+	
+	<string name="preferences_general">General</string>
+	<string name="preferences_dashboard">Dashboard</string>
+	
+	<string name="preferences_eula">eula_accepted</string>
+	<string name="preferences_read_message">read_message</string>
+	<string name="preferences_distance">distance_units</string>
+	<string name="preferences_distance_title">Distance Unit</string>
+	<string name="preferences_distance_default">km</string>
+	
+	
+	<string name="preferences_display_favourites">display_favourites</string>
+    <string name="preferences_display_favourites_title">Display Favourites</string>
+    
+	<string name="preferences_display_upcoming">display_upcoming</string>
+    <string name="preferences_display_upcoming_title">Display Upcoming</string>
+    
+    
+    <string name="preferences_pathfinding">Pathfinding Options</string>
+    <string name="preferences_enable_expiry_dates">route_expiry</string>
+    <string name="preferences_enable_expiry_dates_title">Route Expiration</string>
+    <string name="preferences_enable_expiry_dates_summary">Support Starting/Ending Dates</string>
+    
+	
+	<string name="preferences_time24_default">true</string>
+    <string name="preferences_time24">time24</string>
+    <string name="preferences_time24_title">24 hour time</string>
+    
+    <string name="preferences_theme_title">Program Theme</string>
+    <string name="preferences_theme">program_theme</string>
+    
+    
+    <string name="update_title">Update Available</string>
+    <string name="update_accept">Update</string>
+    <string name="update_cancel">Remind Me Tomorrow</string>
+    <string name="update_message">There is an update available for NI Rail. Please update the application to gain bug fixes, timetable updates and new features.</string>
+    
+    
+    
+    <string name="map_description">Nearest Locations to you</string>
+	
+	
+
+	<string name="loadingText">Loading...</string>
+	
+	<string name="searchUI_sourceText">From:</string>
+	<string name="searchUI_destinationText">Destination:</string>
+	<string name="searchUI_gallery_source_text">Nearby Locations</string>
+	<string name="searchUI_gallery_destination_text">Reachable Locations</string>
+	<string name="searchUI_description_text">Click Journey Planner to access Translinks journey planner.\nNote this requires Internet Connection</string>
+	<string name="title_searchTranslink">Journey Planner</string>
+	
+	
+	<string name="journey_Departure">Depart</string>
+	<string name="journey_Arrival">Arrive</string>
+	<string name="journey_Time">Length</string>
+	<string name="journey_Changes">Changes</string>
+	
+	
+	<string name="journey_week">Weekday</string>
+	<string name="journey_sat">Saturday</string>
+	<string name="journey_sun">Sunday</string>
+	
+	
+	<string name="journey_to">to</string>
+	<string name="journey_linking">Linking Routes</string>
+	<string name="journey_link_count">Portions:</string>
+
+	
+	<string name="route_Stop">Stop</string>
+	<string name="route_Time">Time</string>
+	<string name="route_start">First Date</string>
+	<string name="route_end">Final Date</string>
+	
+	
+	<string name="aboutus_emailTheTeam">Email the Team</string>
+	<string name="aboutus_bugReport">Problem/Request?</string>
+	<string name="aboutus_followus">Keep in Touch</string>
+	<string name="aboutus_close">Close</string>
+	
+	<string name="aboutus_description">Two young developers from NI.\nRichard Currie, the brains;\nMichael Allen, the style.</string>
+	
+	
+	<string name="google_maps_api_key_DEBUG_OLD">0OKP0iyLi3rSvXDdPT_vsl6Nz7FX-L7h58paMNg</string>
+	<string name="google_maps_api_key_DEBUG">0OKP0iyLi3rRS30H8lMopJr3U_fBh7pzW5RCGXA</string>
+	<string name="google_maps_api_key_RELEASE">0OKP0iyLi3rTAMHaTkGKXrsw1dH-t6rfhyr4ZJQ</string>
+	
+	<string name="sort_menu_distance">Sorted by Distance</string>
+	<string name="sort_menu_alphabet">Sorted by A - Z</string>
+	
+	<string name="stationview_UpcomingArrivals">Upcoming Arrivals/Departures</string>
+	
+	<string name="eula_title">EULA</string>
+	<string name="eula_accept">Accept</string>
+	<string name="eula_refuse">Refuse</string>
+	
+	<string name="message_from_devs_number">2</string>
+  <string name="message_title_from_devs">Service Disruption Over</string>
+  <string name="message_from_devs">Translink have completed their planned upgrade of the Derry route. Train times to Coleraine and Derry will now be accurate.</string>
+	
+	<string name="out_of_space_error">Not enough space on storage device for NI Rail &amp; Metro</string>
+	<string name="journey_TotalLength">Duration</string>
+	<string name="journey_Portions">Changes Required</string>
+	
+</resources>

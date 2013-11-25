@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_height="wrap_content" 
+ 	android:gravity="left|top"
+ 	android:layout_width="fill_parent" 
+ 	android:padding="5dip">
+	<ImageView android:id="@+id/delayIcon"
+		android:layout_width="50dip"
+		android:layout_height="50dip"
+		android:layout_alignParentTop="true"
+		android:layout_marginRight="5dip"/>
+ 	<TextView
+ 		style="@style/SmallText"
+ 		android:id="@+id/delayText"
+ 		android:layout_width="fill_parent" 
+ 		android:layout_height="wrap_content"
+ 		android:gravity="left|top"
+		android:layout_toRightOf="@id/delayIcon"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		/>
+ 	<TextView
+ 		style="@style/SmallTextAlt"
+ 		android:id="@+id/delayTime"
+ 		android:layout_width="wrap_content" 
+ 		android:layout_height="wrap_content"
+ 		android:gravity="left|top"
+		android:layout_toRightOf="@id/delayIcon"
+		android:layout_below="@id/delayText"
+		android:layout_alignParentBottom="true"
+		/>
+ 	<ImageView
+ 		style="@style/Delays_LinkImage"
+ 		android:id="@+id/delays_islink_icon"
+		android:layout_toRightOf="@id/delayTime"
+		android:layout_alignBottom="@id/delayTime"
+		android:layout_alignTop="@id/delayTime"
+		/>
+</RelativeLayout>

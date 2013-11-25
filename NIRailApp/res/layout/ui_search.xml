@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	android:id="@+id/scrolling"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:fillViewport="true"
+	>
+	<LinearLayout
+		style="@style/generalBackground"
+		android:id="@+id/searchLayout"
+		android:orientation="vertical"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="fill_parent"
+	   	>
+	    <LinearLayout style="@style/TitleBar">	
+	        <ImageButton style="@style/TitleBarHome"
+	            android:id="@+id/btn_title_home"
+	            android:onClick="onHomeClick" />
+	        <ImageView style="@style/TitleBarSeparator" />
+	 		<TextView 
+	 			style="@style/TitleBarTitle" 
+	 			android:id="@+id/TitleButton"
+	 			android:text="@string/title_search" />
+	    </LinearLayout>
+		
+		
+		<AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper
+			android:id="@+id/searchUI_source_flipper"
+			android:layout_width="fill_parent"
+			android:layout_height="180dip"
+			android:inAnimation="@android:anim/fade_in"
+			android:outAnimation="@android:anim/fade_out"
+			>
+			<View
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+			<LinearLayout
+				android:id="@+id/searchUI_source_selection"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="right"
+				android:layout_marginBottom="5dip"
+				>
+				<AutoCompleteTextView
+					android:id="@+id/searchUI_source_text_view"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:hint="from:"
+					android:completionThreshold="1"
+				    android:layout_marginTop="10dip"
+					/>
+				<TextView
+			 		style="@style/SmallText" 
+			 		android:id="@+id/searchUI_gallerySourceText"
+			 		android:layout_width="fill_parent" 
+			 		android:layout_height="wrap_content"
+			 		android:layout_marginLeft="7dip"
+			 		android:gravity="center|left"
+			 		android:text="@string/searchUI_gallery_source_text"
+					/>
+				<!-- LAYOUT_HEIGHT IS NEEDED! THIS IS IMPORTANT! -->
+				<!-- HEIGHT IS PROGRAMICALLY SET IN SearchWindow.java -->
+				<Gallery
+					android:id="@+id/searchUI_source_gallery_view"
+			        android:layout_width="560dip"
+			        android:layout_height="@dimen/search_gallery_height"
+			 		android:layout_marginLeft="7dip"
+			        android:spacing="5dip"
+			        android:gravity="fill_vertical"
+			        android:clickable="true"
+			        android:unselectedAlpha="1.0"
+			         />
+			</LinearLayout>
+			
+			<RelativeLayout
+		    	android:id="@+id/searchUI_source_station_selected_box"
+				android:visibility="gone"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginRight="10dip"
+			    android:layout_marginLeft="10dip"
+			    android:layout_marginTop="10dip"
+		    	>
+		    	<TextView
+					style="@style/SmallText"
+					android:id="@+id/searchUI_source_station_text"
+					android:layout_width="wrap_content" 
+			 		android:layout_height="wrap_content"
+			 		android:gravity="left|center"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentLeft="true"
+			 		android:layout_marginLeft="7dip"
+					android:text="@string/searchUI_sourceText"
+					/>
+				<ImageView
+					android:id="@+id/searchUI_source_station_selected_image"
+					android:layout_width="50dip"
+					android:layout_height="50dip"
+			 		android:layout_marginLeft="7dip"
+					android:layout_alignParentLeft="true"
+					android:layout_below="@id/searchUI_source_station_text"
+			 		android:gravity="left|center"
+					/>
+				<TextView
+					style="@style/NormalText"
+					android:id="@+id/searchUI_source_station_selected_text"
+			 		android:layout_width="wrap_content" 
+			 		android:layout_height="wrap_content"
+			 		android:gravity="left|center"
+			 		android:layout_marginLeft="5dip"
+					android:layout_toRightOf="@id/searchUI_source_station_selected_image"
+					android:layout_alignTop="@id/searchUI_source_station_selected_image"
+					android:layout_alignBottom="@id/searchUI_source_station_selected_image"
+					/>
+	            <Button
+	            	style="@style/Search_ClearButton"
+	                android:onClick="clearSource"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignTop="@id/searchUI_source_station_selected_image"
+					android:layout_alignBottom="@id/searchUI_source_station_selected_image"
+					/>
+		    </RelativeLayout>
+		</AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper>
+		
+				
+		
+		<AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper
+			android:id="@+id/searchUI_destination_flipper"
+			android:layout_width="fill_parent"
+			android:layout_height="50dip"
+			android:inAnimation="@android:anim/fade_in"
+			android:outAnimation="@android:anim/fade_out"
+			>
+			<View
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+			<LinearLayout
+				android:id="@+id/searchUI_destination_selection"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="right"
+				android:visibility="gone"
+				>
+				<AutoCompleteTextView
+					android:id="@+id/searchUI_destination_text_view"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:hint="to:"
+					android:completionThreshold="1"
+				    android:layout_marginTop="10dip"
+					/>
+				
+				<TextView
+			 		style="@style/SmallText" 
+			 		android:id="@+id/searchUI_galleryDestinationText"
+			 		android:layout_width="fill_parent" 
+			 		android:layout_height="wrap_content"
+			 		android:layout_marginLeft="7dip"
+			 		android:gravity="center|left"
+			 		android:text="@string/searchUI_gallery_destination_text"
+					/>
+				<!-- LAYOUT_HEIGHT IS NEEDED! THIS IS IMPORTANT! -->
+				<!-- HEIGHT IS PROGRAMICALLY SET IN SearchWindow.java -->
+				<Gallery
+					android:id="@+id/searchUI_destination_gallery_view"
+			        android:layout_width="560dip"
+			        android:layout_height="@dimen/search_gallery_height"
+			 		android:layout_marginLeft="7dip"
+			        android:spacing="5dip"
+			        android:gravity="fill_vertical"
+				    android:clickable="true"
+			        android:unselectedAlpha="1.0"
+				    />
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		    	android:id="@+id/searchUI_destination_station_selected_box"
+				android:visibility="gone"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginRight="10dip"
+			    android:layout_marginLeft="10dip"
+			    android:layout_marginTop="10dip"
+		    	>
+		    	<TextView
+					style="@style/SmallText"
+					android:id="@+id/searchUI_destination_station_text"
+					android:layout_width="wrap_content" 
+			 		android:layout_height="wrap_content"
+			 		android:layout_marginLeft="7dip"
+			 		android:gravity="left|center"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentLeft="true"
+					android:text="@string/searchUI_destinationText"
+					/>
+				<ImageView
+					android:id="@+id/searchUI_destination_station_selected_image"
+					android:layout_width="50dip"
+					android:layout_height="50dip"
+			 		android:layout_marginLeft="7dip"
+					android:layout_alignParentLeft="true"
+					android:layout_below="@id/searchUI_destination_station_text"
+			 		android:gravity="left|center"
+					/>
+				<TextView
+					style="@style/NormalText"
+					android:id="@+id/searchUI_destination_station_selected_text"
+			 		android:layout_width="wrap_content" 
+			 		android:layout_height="wrap_content"
+			 		android:layout_marginLeft="5dip"
+			 		android:gravity="left|center"
+					android:layout_toRightOf="@id/searchUI_destination_station_selected_image"
+					android:layout_alignTop="@id/searchUI_destination_station_selected_image"
+					android:layout_alignBottom="@id/searchUI_destination_station_selected_image"
+					/>
+	            <Button
+	            	style="@style/Search_ClearButton"
+	                android:onClick="clearDestination"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignTop="@id/searchUI_destination_station_selected_image"
+					android:layout_alignBottom="@id/searchUI_destination_station_selected_image"
+					/>
+		    </RelativeLayout>
+	    </AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper>
+	    
+		<LinearLayout
+			android:id="@+id/searchUI_buttons"
+			android:visibility="gone"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+		    android:weightSum="1.0"
+		    android:layout_marginRight="10dip"
+		    android:layout_marginLeft="10dip"
+		    android:layout_marginTop="15dip"
+			>
+		    
+		    <Button android:id="@+id/searchUI_translink_button"
+		    	android:layout_width="0dip"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="0.5"
+		    	android:layout_marginRight="10dip"
+		    	android:onClick="onJPClick"
+		    	android:text="@string/title_searchTranslink"
+		    	/>
+		    	
+		    <Button android:id="@+id/searchUI_search_button"
+		    	android:layout_weight="0.5"
+		    	android:layout_width="0dip"
+		    	android:layout_height="wrap_content"
+		    	android:onClick="onSearchClick"
+		    	android:text="@string/title_search" />
+		    	
+	    </LinearLayout>
+		
+		<View 
+			android:layout_width="fill_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1"
+			/>
+			
+		<TextView
+	 		style="@style/NormalText" 
+	 		android:layout_width="fill_parent" 
+	 		android:layout_height="wrap_content"
+	 		android:gravity="center"
+	 		android:paddingTop="10dip"
+	 		android:text="@string/searchUI_description_text"
+			/>
+		
+		<AppZappy.NIRailAndBus.ui.ads.CustomAdView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center" />
+	</LinearLayout>
+</ScrollView>

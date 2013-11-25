@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources
+	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	>
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:actionBarStyle">@style/NiRailActionbar</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="NiRailActionbar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#162b48</item>
+    </style>
+
+    <!-- Base application theme is the default theme. -->
+    <style name="LightTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_new</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="BlueTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_new</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="BlackTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_new_dark</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="OrangeTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_orange</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="GreenTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_green</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="OtherGreenTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_other_green</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="PinkTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_pink</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="OtherPinkTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_other_pink</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="PurpleTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_purple</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="YellowTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_yellow</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="OtherYellowTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#333</item>
+		<item name="dashBackground">@drawable/dash_background_light</item>
+		<item name="upcomingBackground">@drawable/panel_recessed_light</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_other_yellow</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_light</item>
+		<item name="titleBarTextColour">#eee</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#FFFFFF</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#ddd</item>
+		<item name="listItemTextColour">#111</item>
+		<item name="listItemSubTextColour">#666</item>
+		<item name="listHeaderTextColour">#333</item>
+		<item name="listBackgroundColour">#FFFFFFFF</item>
+		<item name="cacheColourHint">#FFFFFFFF</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#22eeeeee</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FFFFFFFF</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="DarkTheme" parent="android:Theme">
+		<item name="headerColour">#eee</item>
+		<item name="dashTextColour">#eee</item>
+		<item name="dashBackground">@drawable/dash_background</item>
+		<item name="upcomingBackground">@drawable/panel_recessed</item>
+		<item name="upcomingItemBackground">@drawable/upcoming_item_bg</item>
+		<item name="upcomingItemTextColour">#eee</item>
+		<item name="titleBarLevel">0</item>
+		<item name="titleBarBackground">@drawable/bar_bg_new_dark</item>
+		<item name="subBarBackground">@drawable/bar_bg_new_dark</item>
+		<item name="titleBarTextColour">#FFF</item>
+		<item name="delayTextColour">#eee</item>
+		<item name="delaySubTextColour">#999</item>
+		<item name="generalBackgroundColor">#000000</item>
+		<item name="stationGalleryTextColour">#eee</item>
+		<item name="panelBackgroundColour">#252525</item>
+		<item name="listItemTextColour">#eee</item>
+		<item name="listItemSubTextColour">#999</item>
+		<item name="listHeaderTextColour">#eee</item>
+		<item name="listBackgroundColour">#000</item>
+		<item name="cacheColourHint">#00000000</item>
+		<item name="autoCompleteTextColour">#000</item>
+		<item name="dropShadowColour">#FF000000</item>
+		<item name="titleSeparator">#40ffffff</item>
+		<item name="delayBackgroundColour">#FF000000</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Variation on the Light theme that turns off the title -->
+    <style name="Theme.IOSched" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+	<style name="Shadow" parent="android:Theme">
+		<item name="android:shadowColor">?dropShadowColour</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2.0</item>
+	</style>
+	<style name="ShadowSmall" parent="android:Theme">
+		<item name="android:shadowColor">?dropShadowColour</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1.5</item>
+	</style>
+	
+	<style name="SmallText" parent="ShadowSmall">
+		<item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?listItemTextColour</item>
+	</style>
+	
+	<style name="ListSmallText" parent="ShadowSmall">
+		<item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?listItemTextColour</item>
+	</style>
+	
+	
+	
+	<style name="SmallBarText" parent="ShadowSmall">
+		<item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?titleBarTextColour</item>
+	</style>
+	<style name="SmallTextAlt" parent="SmallText">
+        <item name="android:textColor">?listItemSubTextColour</item>
+ 	</style>
+	<style name="NormalText" parent="Shadow">
+		<item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?dashTextColour</item>
+	</style>
+	<style name="NormalBarText" parent="Shadow">
+		<item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?titleBarTextColour</item>
+	</style>
+	
+	<style name="UpcomingText" parent="Shadow">
+		<item name="android:textColor">?upcomingItemTextColour</item>
+	</style>
+	<style name="LargeText" parent="NormalText">
+		<item name="android:textSize">@dimen/text_size_large</item>
+   	</style>
+	<style name="XLargeText" parent="NormalText">
+		<item name="android:textSize">@dimen/text_size_xlarge</item>
+   	</style>
+	
+	<style name="Dash_ActivityButton" parent="NormalText">
+		<item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+		<item name="android:background">@null</item>
+    </style>
+
+    <style name="Dash_ActivityButton_Map" parent="Dash_ActivityButton">
+        <item name="android:drawableTop">@drawable/dash_map_btn</item>
+    </style>
+
+	<style name="Dash_ActivityButton_StationList" parent="Dash_ActivityButton">
+        <item name="android:drawableTop">@drawable/dash_station_list_btn</item>
+    </style>
+
+	<style name="Dash_ActivityButton_Search" parent="Dash_ActivityButton">
+        <item name="android:drawableTop">@drawable/dash_search_btn</item>
+    </style>
+
+    <style name="Dash_transportMode_Selection_button" parent="TitleBarAction">
+    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/ic_map_default_selected</item>
+    	<item name="AppZappy.NIRailAndBus:offImage">@drawable/ic_map_default</item>
+    </style>
+   
+
+    
+    <style name="Dash_AppZappyLink" parent="TitleBarAction">
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:layout_width">90dip</item>
+        <item name="android:src">@drawable/ic_title_appzappy</item>
+    </style>
+    
+    <style name="Dash_IconSection" parent="android:Theme">
+        <item name="android:background">?dashBackground</item>
+    </style>
+    
+    <style name="Dashboard_DelayBar" parent="android:Theme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:background">?titleBarBackground</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="Dashboard_DelayBar_text" parent="NormalText">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?titleBarTextColour</item>
+    </style>
+    
+    <style name="Dashboard_DelayBar_alert" parent="NormalText">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?titleBarTextColour</item>
+    </style>
+    
+    
+    
+    
+	<style name="RecessedPanel" parent="android:Theme">
+        <item name="android:background">?upcomingBackground</item>
+    </style>
+    
+    
+
+    <style name="TitleBar" parent="android:Theme">
+        <item name="android:id">@id/title_container</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?titleBarBackground</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="SubTitleBar" parent="android:Theme">
+        <item name="android:id">@id/title_container</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">?subBarBackground</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+	<style name="TitleBarTitle" parent="NormalText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/title_button</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:textColor">?titleBarTextColour</item>
+    </style>
+
+    <style name="TitleBarAction" parent="android:Theme">
+        <item name="android:layout_width">@dimen/title_height</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:background">@drawable/title_button</item>
+    </style>
+
+	<style name="TitleBarHome" parent="TitleBarAction">
+		<item name="android:src">@drawable/ic_title_home</item>
+	</style>
+    
+    <style name="TitleBarSeparator" parent="android:Theme">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">?titleSeparator</item>
+    </style>
+
+    <style name="TitleBarSpring" parent="TitleBarAction">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    
+    
+    <style name="Delays_Container" parent="android:Theme">
+        <item name="android:background">?delayBackgroundColour</item>
+    </style>
+    <style name="Delays_ListView" parent="android:Theme">
+        <item name="android:cacheColorHint">?cacheColourHint</item>
+    </style>
+    <style name="Delays_LinkImage" parent="android:Theme">
+		<item name="android:layout_width">30dip</item>
+		<item name="android:layout_height">15dip</item>
+		<item name="android:src">@drawable/ic_link</item>
+		<item name="android:paddingLeft">5dip</item>
+		<item name="android:scaleType">fitCenter</item>
+    </style>
+    
+    <style name="GenericProgressBackground" parent="android:Theme">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:background">#DD111111</item>
+		<item name="android:gravity">center</item>
+    </style>
+    
+    <style name="GenericProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminate">true</item> 
+    </style>
+    
+    <style name="RefreshButton" parent="TitleBarAction">
+    	<item name="android:src">@drawable/ic_title_refresh</item>
+        <item name="android:layout_height">50dip</item>
+    </style>
+    
+    
+    <style name="Search_ClearButton" parent="TitleBarAction">
+    	<item name="android:gravity">center</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:layout_width">48dip</item>
+        <item name="android:background">@drawable/ic_menu_edit</item>
+    </style>
+    
+    
+    <style name="Search_DeleteButton" parent="TitleBarAction">
+    	<item name="android:gravity">center</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:layout_width">48dip</item>
+        <item name="android:background">@drawable/clear_btn</item>
+    </style>
+    
+    <style name="Search_DropDownText" parent="android:Theme">
+    	<item name="android:textColor">?autoCompleteTextColour</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+    </style>
+    
+    <style name="ListNormalText" parent="NormalText">
+    	<item name="android:textColor">?listItemTextColour</item>
+    </style>
+    
+    <style name="ListSubText" parent="NormalText">
+    	<item name="android:textColor">?listItemSubTextColour</item>
+    </style>
+    
+    
+    <style name="Header_Layout" parent="android:Theme">
+    	<item name="android:background">?panelBackgroundColour</item>
+    </style>
+    <style name="NormalText_Header" parent="NormalText">
+    	<item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/title_button</item>
+    </style>
+    
+    
+	<style name="Journey_SwapLocations" parent="android:Theme">
+    	<item name="android:src">@drawable/ic_swap</item>
+        <item name="android:background">@drawable/title_button</item>
+        <item name="android:layout_width">50dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+	<style name="Journey_HeaderBackground" parent="android:Theme">
+    	<item name="android:background">?listBackgroundColour</item>
+    </style>
+    <style name="Journey_TimetableList" parent="android:Theme">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">fill_parent</item>
+    	<item name="android:padding">2dip</item>
+    	<item name="android:background">?listBackgroundColour</item>
+    </style>
+    
+    <style name="ListFutureText" parent="android:Theme">
+    	<item name="android:textColor">?listItemTextColour</item>
+    </style>
+    
+    <style name="ListPastText" parent="android:Theme">
+    	<item name="android:textColor">?listItemSubTextColour</item>
+    </style>
+    
+    <style name="Journey_DaySelect" parent="android:Theme">
+    	<item name="android:layout_width">0dip</item>
+    	<item name="android:layout_height">50dip</item>
+    	<item name="android:layout_weight">1</item>
+    	<item name="android:background">?titleBarBackground</item>
+    </style>
+    
+    
+    
+ 	<style name="Route_List" parent="TitleBarAction">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">0dip</item>
+    	<item name="android:layout_weight">1</item>
+    	<item name="android:padding">2dip</item>
+    	<item name="android:paddingTop">0dip</item>
+    	<item name="android:background">?listBackgroundColour</item>
+        <item name="android:cacheColorHint">?cacheColourHint</item>
+    </style>
+    
+    <style name="general_list" parent="TitleBarAction">
+    	<item name="android:layout_width">fill_parent</item>
+    	<item name="android:layout_height">0dip</item>
+    	<item name="android:layout_weight">1</item>
+    	<item name="android:padding">2dip</item>
+    	<item name="android:paddingTop">0dip</item>
+    	<item name="android:background">?listBackgroundColour</item>
+        <item name="android:cacheColorHint">?cacheColourHint</item>
+    </style>
+    
+    
+    
+    
+    <style name="StationList_TopNavButton_map" parent="TitleBarAction">
+    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/ic_map_default_selected</item>
+    	<item name="AppZappy.NIRailAndBus:offImage">@drawable/ic_map_default</item>
+    </style>
+    <style name="StationList_TopNavButton_list" parent="TitleBarAction">
+    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/ic_list_default_selected</item>
+    	<item name="AppZappy.NIRailAndBus:offImage">@drawable/ic_list_default</item>
+    </style>
+    <style name="StationList_SortButton" parent="android:Theme">
+    	<item name="android:background">?listBackgroundColour</item>
+    	<item name="android:textColor">?listHeaderTextColour</item>
+    </style>
+    <style name="StationList_SearchCancelButton" parent="android:Theme">
+    	<item name="android:background">@drawable/clear_btn</item>
+    </style>
+	<style name="StationList_SearchButton" parent="android:Theme">
+    	<item name="android:background">@drawable/ic_title_search</item>
+    </style>
+			
+    <style name="StationList_FavouriteButton" parent="android:Theme">
+    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/fav_btn_default</item>
+    	<item name="AppZappy.NIRailAndBus:offImage">@drawable/fav_btn_inactive</item>
+    	<item name="android:background">@null</item>
+    	<item name="android:gravity">fill</item>
+    	<item name="android:layout_width">50dip</item>
+    	<item name="android:layout_height">50dip</item>
+    	<item name="android:scaleType">fitCenter</item>
+	</style>
+    
+    <style name="generalBackground" parent="android:Theme">
+    	<item name="android:background">?generalBackgroundColor</item>
+    </style>
+    
+    
+    <style name="StationView_Favourite" parent="android:Theme">
+    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/fav_btn_default</item>
+		<item name="AppZappy.NIRailAndBus:offImage">@drawable/fav_btn_inactive</item>
+		<item name="android:background">@null</item>
+    </style>
+    
+	<style name="StationView_NavigateButton" parent="TitleBarAction">
+    	<item name="android:src">@drawable/ic_nav</item>
+    </style>
+	<style name="StationView_GoogleMapButton" parent="TitleBarAction">
+    	<item name="android:src">@drawable/ic_googlemap</item>
+    </style>
+	
+	
+	
+	<style name="UpcomingItem_Container" parent="android:Theme">
+		<item name="android:background">@drawable/upcoming_item_bg</item>
+    </style>
+	
+
+
+
+	<style name="Aboutus_text" parent="LargeText">
+		<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="Aboutus_titletext" parent="XLargeText">
+		<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    
+	<style name="Aboutus_logo" parent="Aboutus_Button">
+		<item name="android:background">@drawable/icon_hd</item>
+    </style>
+    
+	<style name="Aboutus_appZappy" parent="Aboutus_Button">
+		<item name="android:background">@drawable/appzappy_logo</item>
+    </style>
+    
+    
+	<style name="Aboutus_Button" parent="android:Theme">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">4dip</item>
+		<item name="android:layout_marginBottom">4dip</item>
+		<item name="android:layout_marginRight">10dip</item>
+		<item name="android:layout_marginLeft">0dip</item>
+	</style>
+	<style name="Aboutus_EmailButton" parent="Aboutus_Button">
+		<item name="android:background">@drawable/ic_email</item>
+    </style>
+	<style name="Aboutus_BugButton" parent="Aboutus_Button">
+		<item name="android:background">@drawable/ic_bug</item>
+    </style>
+	<style name="Aboutus_TwitterButton" parent="Aboutus_Button">
+		<item name="android:background">@drawable/ic_twitter</item>
+    </style>
+    
+	<style name="Aboutus_FacebookButton" parent="Aboutus_Button">
+		<item name="android:background">@drawable/ic_facebook</item>
+    </style>
+	
+	<style name="Aboutus_AppzappyLogoButton" parent="Aboutus_Button">
+		<item name="android:background">@drawable/appzappy_logo</item>
+    </style>
+    
+    <style name="Aboutus_description" parent="NormalText">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:gravity">center_horizontal</item>
+    </style>
+    
+    <style name="viewpager_indicator" parent="android:Theme">
+    	<item name="AppZappy.NIRailAndBus:footerLineHeight">3dip</item>
+    	<item name="AppZappy.NIRailAndBus:footerColor">@color/highlighted_item</item>
+    	<item name="AppZappy.NIRailAndBus:textSize">18sp</item>
+    	<item name="AppZappy.NIRailAndBus:selectedColor">?listItemTextColour</item>
+    	<item name="AppZappy.NIRailAndBus:textColor">?listItemTextColour</item>
+    	<item name="android:background">?listBackgroundColour</item>
+    </style>
+    
+    
+    
+    <!-- Copyright (C) 2011 Jake Wharton
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+	-->
+    <style name="Theme.PageIndicatorDefaults" parent="@android:style/Theme">
+        <item name="circlePageIndicatorStyle">@style/Widget.CirclePageIndicator</item>
+        <item name="titlePageIndicatorStyle">@style/Widget.TitlePageIndicator</item>
+    </style>
+
+    <style name="Widget.CirclePageIndicator" parent="@android:style/Widget">
+        <item name="centered">@bool/default_circle_indicator_centered</item>
+        <item name="fillColor">@color/default_circle_indicator_fill_color</item>
+        <item name="orientation">@integer/default_circle_indicator_orientation</item>
+        <item name="radius">@dimen/default_circle_indicator_radius</item>
+        <item name="snap">@bool/default_circle_indicator_snap</item>
+        <item name="strokeColor">@color/default_circle_indicator_stroke_color</item>
+        <item name="strokeWidth">@dimen/default_circle_indicator_stroke_width</item>
+    </style>
+
+    <style name="Widget.TitlePageIndicator" parent="@android:style/Widget">
+        <item name="clipPadding">@dimen/default_title_indicator_clip_padding</item>
+        <item name="footerColor">@color/default_title_indicator_footer_color</item>
+        <item name="footerLineHeight">@dimen/default_title_indicator_footer_line_height</item>
+        <item name="footerIndicatorStyle">@integer/default_title_indicator_footer_indicator_style</item>
+        <item name="footerIndicatorHeight">@dimen/default_title_indicator_footer_indicator_height</item>
+        <item name="footerIndicatorUnderlinePadding">@dimen/default_title_indicator_footer_indicator_underline_padding</item>
+        <item name="footerPadding">@dimen/default_title_indicator_footer_padding</item>
+        <item name="selectedColor">@color/default_title_indicator_selected_color</item>
+        <item name="selectedBold">@bool/default_title_indicator_selected_bold</item>
+        <item name="textColor">@color/default_title_indicator_text_color</item>
+        <item name="textSize">@dimen/default_title_indicator_text_size</item>
+        <item name="titlePadding">@dimen/default_title_indicator_title_padding</item>
+        <item name="topPadding">@dimen/default_title_indicator_top_padding</item>
+    </style>
+</resources>

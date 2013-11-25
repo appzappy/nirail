@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="AppZappy.NIRailAndBus.test"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+
+    <uses-library android:name="android.test.runner" />
+    </application>
+    <uses-sdk android:minSdkVersion="4" />
+    <instrumentation android:targetPackage="AppZappy.NIRailAndBus" android:name="android.test.InstrumentationTestRunner" />
+
+
+</manifest> 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_height="@dimen/main_favourites_item_height" 
+ 	android:gravity="center|top"
+ 	android:layout_width="@dimen/main_favourites_item_width" 
+ 	android:paddingTop="0dip"
+ 	android:paddingBottom="5dip"
+ 	android:paddingLeft="5dip"
+ 	android:paddingRight="5dip"
+ 	>
+	<ImageView android:id="@+id/mainwindow_favs_icon"
+		android:layout_width="70dip"
+		android:layout_height="70dip"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentLeft="true"
+		android:src="@drawable/dash_train_btn"
+		/>
+ 	<TextView android:id="@+id/mainwindow_favs_destination"
+ 		style="@style/SmallText"
+ 		android:layout_width="fill_parent" 
+ 		android:layout_height="wrap_content"
+ 		android:gravity="center|bottom"
+		android:layout_below="@id/mainwindow_favs_icon"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentLeft="true"
+ 		/>
+</RelativeLayout>
