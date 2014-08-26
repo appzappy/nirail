@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources
-	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	xmlns:app="http://schemas.android.com/apk/res/appzappy.nirail"
 	>
 
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
@@ -455,8 +455,8 @@
     </style>
 
     <style name="Dash_transportMode_Selection_button" parent="TitleBarAction">
-    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/ic_map_default_selected</item>
-    	<item name="AppZappy.NIRailAndBus:offImage">@drawable/ic_map_default</item>
+    	<item name="appzappy.nirail:onImage">@drawable/ic_map_default_selected</item>
+    	<item name="appzappy.nirail:offImage">@drawable/ic_map_default</item>
     </style>
    
 
@@ -676,12 +676,12 @@
     
     
     <style name="StationList_TopNavButton_map" parent="TitleBarAction">
-    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/ic_map_default_selected</item>
-    	<item name="AppZappy.NIRailAndBus:offImage">@drawable/ic_map_default</item>
+    	<item name="appzappy.nirail:onImage">@drawable/ic_map_default_selected</item>
+    	<item name="appzappy.nirail:offImage">@drawable/ic_map_default</item>
     </style>
     <style name="StationList_TopNavButton_list" parent="TitleBarAction">
-    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/ic_list_default_selected</item>
-    	<item name="AppZappy.NIRailAndBus:offImage">@drawable/ic_list_default</item>
+    	<item name="appzappy.nirail:onImage">@drawable/ic_list_default_selected</item>
+    	<item name="appzappy.nirail:offImage">@drawable/ic_list_default</item>
     </style>
     <style name="StationList_SortButton" parent="android:Theme">
     	<item name="android:background">?listBackgroundColour</item>
@@ -695,8 +695,8 @@
     </style>
 			
     <style name="StationList_FavouriteButton" parent="android:Theme">
-    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/fav_btn_default</item>
-    	<item name="AppZappy.NIRailAndBus:offImage">@drawable/fav_btn_inactive</item>
+    	<item name="appzappy.nirail:onImage">@drawable/fav_btn_default</item>
+    	<item name="appzappy.nirail:offImage">@drawable/fav_btn_inactive</item>
     	<item name="android:background">@null</item>
     	<item name="android:gravity">fill</item>
     	<item name="android:layout_width">50dip</item>
@@ -710,8 +710,8 @@
     
     
     <style name="StationView_Favourite" parent="android:Theme">
-    	<item name="AppZappy.NIRailAndBus:onImage">@drawable/fav_btn_default</item>
-		<item name="AppZappy.NIRailAndBus:offImage">@drawable/fav_btn_inactive</item>
+    	<item name="appzappy.nirail:onImage">@drawable/fav_btn_default</item>
+		<item name="appzappy.nirail:offImage">@drawable/fav_btn_inactive</item>
 		<item name="android:background">@null</item>
     </style>
     
@@ -784,11 +784,11 @@
     </style>
     
     <style name="viewpager_indicator" parent="android:Theme">
-    	<item name="AppZappy.NIRailAndBus:footerLineHeight">3dip</item>
-    	<item name="AppZappy.NIRailAndBus:footerColor">@color/highlighted_item</item>
-    	<item name="AppZappy.NIRailAndBus:textSize">18sp</item>
-    	<item name="AppZappy.NIRailAndBus:selectedColor">?listItemTextColour</item>
-    	<item name="AppZappy.NIRailAndBus:textColor">?listItemTextColour</item>
+    	<item name="appzappy.nirail:footerLineHeight">3dip</item>
+    	<item name="appzappy.nirail:footerColor">@color/highlighted_item</item>
+    	<item name="appzappy.nirail:textSize">18sp</item>
+    	<item name="appzappy.nirail:selectedColor">?listItemTextColour</item>
+    	<item name="appzappy.nirail:textColor">?listItemTextColour</item>
     	<item name="android:background">?listBackgroundColour</item>
     </style>
     

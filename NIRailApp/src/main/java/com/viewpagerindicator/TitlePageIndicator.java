@@ -19,7 +19,7 @@ package com.viewpagerindicator;
 
 import java.util.ArrayList;
 
-import AppZappy.NIRailAndBus.R;
+import appzappy.nirail.R;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;

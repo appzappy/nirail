@@ -16,7 +16,7 @@
  */
 package com.viewpagerindicator;
 
-import AppZappy.NIRailAndBus.R;
+import appzappy.nirail.R;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;

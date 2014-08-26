@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:id="@+id/scrolling"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
@@ -26,7 +26,7 @@
 	    </LinearLayout>
 		
 		
-		<AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper
+		<appzappy.nirail.ui.widgets.FixedViewFlipper
 			android:id="@+id/searchUI_source_flipper"
 			android:layout_width="fill_parent"
 			android:layout_height="180dip"
@@ -125,11 +125,11 @@
 					android:layout_alignBottom="@id/searchUI_source_station_selected_image"
 					/>
 		    </RelativeLayout>
-		</AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper>
+		</appzappy.nirail.ui.widgets.FixedViewFlipper>
 		
 				
 		
-		<AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper
+		<appzappy.nirail.ui.widgets.FixedViewFlipper
 			android:id="@+id/searchUI_destination_flipper"
 			android:layout_width="fill_parent"
 			android:layout_height="50dip"
@@ -229,7 +229,7 @@
 					android:layout_alignBottom="@id/searchUI_destination_station_selected_image"
 					/>
 		    </RelativeLayout>
-	    </AppZappy.NIRailAndBus.ui.widgets.FixedViewFlipper>
+	    </appzappy.nirail.ui.widgets.FixedViewFlipper>
 	    
 		<LinearLayout
 			android:id="@+id/searchUI_buttons"
@@ -276,7 +276,7 @@
 	 		android:text="@string/searchUI_description_text"
 			/>
 		
-		<AppZappy.NIRailAndBus.ui.ads.CustomAdView
+		<appzappy.nirail.ui.ads.CustomAdView
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
 			android:gravity="center" />

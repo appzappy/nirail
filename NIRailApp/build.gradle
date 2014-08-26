@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+
+dependencies {
+    compile 'com.google.android.gms:play-services:+'
+}
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        instrumentTest.setRoot('tests')
+    }
+}

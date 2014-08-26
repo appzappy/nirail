@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:orientation="vertical">
@@ -19,7 +18,7 @@
 			android:text="@string/title_station" />
 		<View
 			style="@style/TitleBarSpring" />
-		<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+		<appzappy.nirail.ui.widgets.ToggleImageButton
 			style="@style/StationView_Favourite"
 			android:id="@+id/stationView_Toggle_btn"
 			android:onClick="setAsFavourite"
@@ -98,8 +97,4 @@
 		android:layout_weight="1"
 		android:gravity="left"
 		android:clickable="true" />
-	<AppZappy.NIRailAndBus.ui.ads.CustomAdView
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center" />
 </LinearLayout>

@@ -133,7 +133,7 @@
 	    	android:text="@string/title_remindMe" />
 	    	
 	</LinearLayout>
-	<AppZappy.NIRailAndBus.ui.ads.CustomAdView
+	<appzappy.nirail.ui.ads.CustomAdView
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center" />

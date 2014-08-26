@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:gravity="top|right"
@@ -23,13 +23,13 @@
 
 		<ImageView
 			style="@style/TitleBarSeparator" />
-		<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+		<appzappy.nirail.ui.widgets.ToggleImageButton
 			style="@style/StationList_TopNavButton_map"
 			android:id="@+id/stationFinderUI_mapToggle_btn"
 			app:initialState="true" />
 		<ImageView
 			style="@style/TitleBarSeparator" />
-		<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+		<appzappy.nirail.ui.widgets.ToggleImageButton
 			style="@style/StationList_TopNavButton_list"
 			android:id="@+id/stationFinderUI_listToggle_btn"
 			android:onClick="onOpenListViewClick"

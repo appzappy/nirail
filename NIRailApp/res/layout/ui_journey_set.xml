@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res/AppZappy.NIRailAndBus"
 	android:id="@+id/journey_main_layout"
 	android:orientation="vertical"
 	android:layout_width="fill_parent"
@@ -21,7 +20,7 @@
 			android:text="@string/title_journey_set" />
 		<View
 			style="@style/TitleBarSpring" />
-		<AppZappy.NIRailAndBus.ui.widgets.ToggleImageButton
+		<appzappy.nirail.ui.widgets.ToggleImageButton
 			style="@style/StationView_Favourite"
 			android:id="@+id/journey_favourite_toggle_btn"
 			android:onClick="setAsFavourite"
@@ -78,7 +77,7 @@
 		android:layout_weight="1" 
 	    android:id="@+id/pager"/>
 	    
-	<AppZappy.NIRailAndBus.ui.ads.CustomAdView
+	<appzappy.nirail.ui.ads.CustomAdView
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center" />
